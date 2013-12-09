@@ -10,6 +10,9 @@
 #import "RFPasswordStrength.h"
 
 @interface ViewController ()
+@property (strong, nonatomic) IBOutlet UITextField *passwordField;
+@property (strong, nonatomic) IBOutlet UILabel *displayPasswordStrength;
+- (IBAction)textChanged:(UITextField *)sender;
 
 @end
 
@@ -19,6 +22,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [self.passwordField setDelegate:self];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -27,4 +33,22 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)textChanged:(UITextField *)sender {
+    
+    //Use class method to get Password Strength
+    int passwordStrength = [RFPasswordStrength checkPasswordStrengthWithPassword:self.passwordField.text];
+    
+    //Change Label
+    if (passwordStrength == 0) {
+        self.displayPasswordStrength.backgroundColor = [UIColor greenColor];
+        self.displayPasswordStrength.text = @"Strong";
+    } else if (passwordStrength == 1) {
+        self.displayPasswordStrength.backgroundColor = [UIColor yellowColor];
+        self.displayPasswordStrength.text = @"Medium";
+    } else if (passwordStrength == 2) {
+        self.displayPasswordStrength.backgroundColor = [UIColor redColor];
+        self.displayPasswordStrength.text = @"Weak";
+    }
+    
+}
 @end

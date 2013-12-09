@@ -43,7 +43,7 @@
         self.displayPasswordStrength.backgroundColor = [UIColor greenColor];
         self.displayPasswordStrength.text = @"Strong";
     } else if (passwordStrength == 1) {
-        self.displayPasswordStrength.backgroundColor = [UIColor yellowColor];
+        self.displayPasswordStrength.backgroundColor = [UIColor colorWithRed:(229/255.0) green:(226/255.0) blue:(3/255.0) alpha:1];
         self.displayPasswordStrength.text = @"Medium";
     } else if (passwordStrength == 2) {
         self.displayPasswordStrength.backgroundColor = [UIColor redColor];

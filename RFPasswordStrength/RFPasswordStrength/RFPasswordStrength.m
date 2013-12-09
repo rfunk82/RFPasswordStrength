@@ -28,7 +28,7 @@
     }
     
     //Check for strong password strength
-    if (passwordLength > 12 && upperCaseLetter > 0 && numbers > 0 && symbols > 0) {
+    if ((passwordLength > 12) && (upperCaseLetter > 0) && (numbers > 0) && (symbols > 0)) {
         strength = strong;
         return strength;
     }
@@ -60,7 +60,7 @@
     
     int count=0;
     
-    NSCharacterSet * set = [[NSCharacterSet characterSetWithCharactersInString:@"0123456789"] invertedSet];
+    NSCharacterSet * set = [NSCharacterSet characterSetWithCharactersInString:@"0123456789"];
     
     if ([password rangeOfCharacterFromSet:set].location != NSNotFound) {
         count++;
@@ -75,7 +75,7 @@
     
     int count=0;
     
-    NSCharacterSet * set = [[NSCharacterSet characterSetWithCharactersInString:@"`~!@#$%^&*()_+-={}[]:\";'<'"] invertedSet];
+    NSCharacterSet * set = [NSCharacterSet characterSetWithCharactersInString:@"`~!@#$%^&*()_+-={}[]:\";'<'"];
     
     if ([password rangeOfCharacterFromSet:set].location != NSNotFound) {
         count++;

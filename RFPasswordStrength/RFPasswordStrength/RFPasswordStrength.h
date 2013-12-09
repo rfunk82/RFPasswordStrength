@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+typedef enum PasswordStrength : NSUInteger {
+    strong,
+    medium,
+    weak
+} PasswordStrength;
+
 @interface RFPasswordStrength : NSObject
+
++(int)checkPasswordStrengthWithPassword:(NSString *)password;
 
 @end

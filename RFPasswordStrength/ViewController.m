@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "RFPasswordStrength.h"
 
 @interface ViewController ()
 

@@ -21,6 +21,7 @@
 		C7A7171D185615A300CE6BC4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A716FF185615A300CE6BC4 /* UIKit.framework */; };
 		C7A71725185615A300CE6BC4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7A71723185615A300CE6BC4 /* InfoPlist.strings */; };
 		C7A71727185615A300CE6BC4 /* RFPasswordStrengthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A71726185615A300CE6BC4 /* RFPasswordStrengthTests.m */; };
+		C7A71732185615CD00CE6BC4 /* RFPasswordStrength.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A71731185615CD00CE6BC4 /* RFPasswordStrength.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		C7A71722185615A300CE6BC4 /* RFPasswordStrengthTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RFPasswordStrengthTests-Info.plist"; sourceTree = "<group>"; };
 		C7A71724185615A300CE6BC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C7A71726185615A300CE6BC4 /* RFPasswordStrengthTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RFPasswordStrengthTests.m; sourceTree = "<group>"; };
+		C7A71730185615CD00CE6BC4 /* RFPasswordStrength.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RFPasswordStrength.h; path = RFPasswordStrength/RFPasswordStrength/RFPasswordStrength.h; sourceTree = "<group>"; };
+		C7A71731185615CD00CE6BC4 /* RFPasswordStrength.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RFPasswordStrength.m; path = RFPasswordStrength/RFPasswordStrength/RFPasswordStrength.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,8 @@
 		C7A716EF185615A300CE6BC4 = {
 			isa = PBXGroup;
 			children = (
+				C7A71730185615CD00CE6BC4 /* RFPasswordStrength.h */,
+				C7A71731185615CD00CE6BC4 /* RFPasswordStrength.m */,
 				C7A71701185615A300CE6BC4 /* RFPasswordStrength */,
 				C7A71720185615A300CE6BC4 /* RFPasswordStrengthTests */,
 				C7A716FA185615A300CE6BC4 /* Frameworks */,
@@ -250,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7A71712185615A300CE6BC4 /* ViewController.m in Sources */,
+				C7A71732185615CD00CE6BC4 /* RFPasswordStrength.m in Sources */,
 				C7A7170C185615A300CE6BC4 /* AppDelegate.m in Sources */,
 				C7A71708185615A300CE6BC4 /* main.m in Sources */,
 			);

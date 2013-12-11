@@ -17,6 +17,10 @@ People wonder if their password is a good password. I often come across two dist
 
 ![RFPasswordStrength](http://i.imgur.com/ltl5N7c.png)
 
+TODO
+==========
+
+Improve algorithm to check password strength
 
 Created By
 ==========
